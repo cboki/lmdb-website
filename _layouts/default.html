@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'fr-FR' }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <meta name="description" content="Les mystères de Bourges est un jeu de type Escape game en extérieur et en plein air à Bourges. Résolvez des énigmes et redécouvrez le patrimoine local de façon insolite, en famille ou entre amis.">
+    <meta property="og:title" content="Les mystères de Bourges | Escape game extérieur à Bourges">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lesmysteresdebourges.fr">
+    <meta property="og:image" content="https://www.lesmysteresdebourges.fr/images/les_mysteres_de_bourges_escape_game_exterieur_bourges_open_graph_image.jpg">
+    <meta property="og:description" content="Résolvez des énigmes et (re)découvrez le patrimoine local de Bourges de façon insolite, en famille ou entre amis. Retrouvez nous sur notre page dédiée.">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <link rel="icon" href="https://www.lesmysteresdebourges.fr/images/favicon.ico">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '438859176770978');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=438859176770978&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152615864-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-152615864-1');
+    </script>
   </head>
   <body>
+
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v5.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="113837449987020"
+      theme_color="#EB5754"
+      logged_in_greeting="Bonjour ! Envie d'en savoir plus sur les Mystères de Bourges ?"
+      logged_out_greeting="Bonjour ! Envie d'en savoir plus sur les Mystères de Bourges ?">
+    </div>
+
+    {% include navbar.html %}
     {{ content}}
+    {% include footer.html %}
   </body>
 </html>

@@ -1,0 +1,43 @@
+/* -------------------------------------
+ * Fonts
+ * ------------------------------------- */
+// Google fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Playfair+Display:400,400i,700&display=swap");
+
+$base-font: "Open Sans", "Helvetica", "sans-serif";
+$header-font: "Playfair Display", "Helvetica", "sans-serif";
+
+// Local fonts (uncomment following lines)
+// @font-face {
+//   font-family: "Font Name";
+//   src: font-url('FontFile.eot');
+//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+//        font-url('FontFile.woff') format('woff'),
+//        font-url('FontFile.ttf') format('truetype')
+// }
+// $my-font: "Font Name";
+
+// Font-size and line-height
+$base-size: 1rem;
+$base-height: 2.2;
+
+/* -------------------------------------
+ * Colors
+ * ------------------------------------- */
+// Scheme
+$brand-color: #EB5754;
+
+// Colors LMDB
+$red: #EB5754;
+$blue: #739CBD;
+$green: #7EBA28;
+$gray-lmdb: #9A9999;
+$orange: #E67E22;
+$yellow: #FDB631;
+
+// Gray scale
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: lighten(#000, 93.5%); // #eee

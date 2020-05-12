@@ -1,4 +1,25 @@
 ---
 ---
 
-@import "main";
+//bootstrap
+@import 'custom/variables';
+@import 'custom/bootstrap_variables';
+@import 'bootstrap/bootstrap';
+
+//layouts
+@import 'layouts/footer';
+@import 'layouts/navbar';
+@import 'layouts/utilities';
+
+//components
+@import 'components/banner';
+@import 'components/buttons';
+@import 'components/carres';
+@import 'components/links';
+@import 'components/others';
+@import 'components/titles';
+@import 'components/wrappers';
+
+//pages
+@import 'pages/home';
+

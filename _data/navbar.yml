@@ -1,0 +1,10 @@
+- name: Réserver
+  link: /
+- name: Parcours
+  link: /
+- name: Tarifs
+  link: /
+- name: Avis
+  link: /
+- name: FAQ
+  link: /
