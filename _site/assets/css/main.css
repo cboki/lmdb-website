@@ -2190,4 +2190,44 @@ h4 { font-size: 24px; }
 
 #steps-index .step-card h2 { color: #EB5754; }
 
+.avis-carre { color: white; display: flex; align-items: center; justify-content: center; padding: 10px; position: relative; }
+
+#avis-1, #avis-5 { background-color: #EB5754; }
+
+#avis-2, #avis-6 { background-color: #739CBD; }
+
+#avis-3, #avis-7 { background-color: #7EBA28; }
+
+#avis-4 { background-color: #9A9999; }
+
+.faq-question { margin: 100px 0px; }
+
+#bandeau-photos-parcours { background-color: #EB5754; }
+
+#notre-parcours { position: relative; }
+
+#jacquescoeur-parcours { position: absolute; bottom: 0px; left: 100px; height: 400px; }
+
+label { color: #EB5754; }
+
+.tarifs-carre { color: white; display: flex; flex-direction: column; justify-content: space-around; align-items: center; margin: 0px auto; }
+
+.tarifs-carre span { margin-bottom: 0px; }
+
+.tarifs-carre .fa { font-size: 42px; }
+
+.tarifs-carre .tarifs-carre-large-text { font-family: "Playfair Display", "Helvetica", "sans-serif"; font-weight: bold; font-size: 82px; margin: -40px 0px; }
+
+.tarifs-carre .tarifs-carre-normal-text { font-family: "Playfair Display", "Helvetica", "sans-serif"; font-weight: bold; font-size: 32px; margin-top: -20px; }
+
+#tarif-1 { background-color: #EB5754; }
+
+#tarif-2 { background-color: #7EBA28; }
+
+#tarif-3 { background-color: #739CBD; }
+
+#tarif-4 { background-color: #9A9999; }
+
+.emoji { height: 72px; margin-top: 8px; }
+
 /*# sourceMappingURL=main.css.map */
