@@ -21,7 +21,7 @@
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
         {% for item in site.data.navbar %}
-          <a href="{{ item.link }}">{{ item.name }}</a>
+          <li><a href="{{ item.link }}">{{ item.name }}</a></li>
         {% endfor %}
       </ul>
     </div>
