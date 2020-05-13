@@ -1,5 +1,5 @@
-url: "cboki.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/lmdb-website" # the subpath of your site, e.g. /blog
+url: "https://lesmysteresdebourges.fr" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
 title: Les mystères de Bourges, Escape game en plein air à Bourges # the name of your site, e.g. ACME Corp.
 sass:
   sass_dir: assets/css
