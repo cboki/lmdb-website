@@ -10,47 +10,52 @@ permalink: /:basename
     <a href="#les-questions" class="btn btn-flat">Lire maintenant</a>
   </div>
 </div>
-<div id="les-questions" class="container">
 
-<!-- Menu de la FAQ -->
-<div class="row">
-  <div class="col-sm-12 col-md-6">
-    <h2>Principe du jeu</h2>
-    <ul class="list-unstyled">
-      {% for item in site.data.faq.principe %}
-        <li><a href="#principe-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="col-sm-12 col-md-6">
-    <h2>Réservation</h2>
-    <ul class="list-unstyled">
-      {% for item in site.data.faq.reservation %}
-        <li><a href="#reservation-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
-      {% endfor %}
-    </ul>
+<div class="wrapper-small">
+  <div id="les-questions" class="container">
+    <!-- Menu de la FAQ -->
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h2>Principe du jeu</h2>
+        <ul class="list-unstyled">
+          {% for item in site.data.faq.principe %}
+            <li><a href="#principe-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h2>Réservation</h2>
+        <ul class="list-unstyled">
+          {% for item in site.data.faq.reservation %}
+            <li><a href="#reservation-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
+<div class="wrapper-small">
+  <div class="container">
+  <!-- Contenue de la FAQ -->
+    <h2>Principe du jeu</h2>
 
-<!-- Contenue de la FAQ -->
-  <h2>Principe du jeu</h2>
+    {% for item in site.data.faq.principe %}
+      <div class="faq-question">
+        <h3 id="principe-<%= index %>">{{ item.question }}</h3>
+        <p>{{ item.reponse }}</p>
+      </div>
+    {% endfor %}
 
-  {% for item in site.data.faq.principe %}
-    <div class="faq-question">
-      <h3 id="principe-<%= index %>">{{ item.question }}</h3>
-      <p>{{ item.reponse }}</p>
-    </div>
-  {% endfor %}
+    <h2>Réservation</h2>
 
-  <h2>Réservation</h2>
-
-  {% for item in site.data.faq.reservation %}
-    <div class="faq-question">
-      <h3 id="reservation-<%= index %>">{{ item.question }}</h3>
-      <p>{{ item.reponse }}</p>
-    </div>
-  {% endfor %}
+    {% for item in site.data.faq.reservation %}
+      <div class="faq-question">
+        <h3 id="reservation-<%= index %>">{{ item.question }}</h3>
+        <p>{{ item.reponse }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 <div class="wrapper-bottom text-center">
   <div class="container">
