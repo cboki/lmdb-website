@@ -3,3 +3,5 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: Les mystères de Bourges, Escape game en plein air à Bourges # the name of your site, e.g. ACME Corp.
 sass:
   sass_dir: assets/css
+include:
+  - _pages
