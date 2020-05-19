@@ -126,6 +126,7 @@
 </nav>
 
     <div id="reservation" class="wrapper-small">
+  <img src="assets/images/reservation_escape_game_bourges_mysteres_jeu.png" alt="logo illustratif des Mystères de Bourges - Escape game en plein air à Bourges" id="logo-illus-reservation" class="d-none d-lg-block">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6">
@@ -138,7 +139,7 @@
         </ul>
       </div>
       <div class="col-sm-12 col-md-6">
-        <form action="https://formspree.io/contact@lesmysteresdebourges.fr" method="POST" />
+        <form id="reservation-form" action="https://formspree.io/contact@lesmysteresdebourges.fr" method="POST" />
           <div class="form-group">
             <label for="nom">Nom</label>
             <input type="text" class="form-control" id="nom" name="nom" placeholder="Jacques Coeur">
@@ -153,10 +154,11 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea  class="form-control" id="message" name="message">Je viendrai ce samedi avec tous mes amis ... (Nous préciser la date et le nombre de joueurs)</textarea>
+            <textarea  class="form-control" id="message" name="message">Je souhaite jouer ce samedi avec tous mes amis ... (Préciser la date, l'heure et le nombre de joueurs)</textarea>
           </div>
           <button id="sendDataFormButton" type="submit" class="btn btn-flat btn-lg">C'est parti</button>
         </form>
+        <p id="text-answer-form">Promis, on vous répond vite.</p>
       </div>
     </div>
   </div>

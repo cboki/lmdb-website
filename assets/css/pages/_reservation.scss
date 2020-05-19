@@ -1,3 +1,14 @@
 label {
   color: $red;
 }
+
+#reservation {
+  position: relative;
+}
+
+#logo-illus-reservation {
+  position: absolute;
+  bottom: 24px;
+  left: 80px;
+  height: 300px;
+}

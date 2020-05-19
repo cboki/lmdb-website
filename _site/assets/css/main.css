@@ -6658,6 +6658,12 @@ a.text-dark:hover, a.text-dark:focus {
   object-fit: cover;
   display: block; }
 
+#reservation-form {
+  margin-bottom: 20px; }
+
+#text-answer-form {
+  font-weight: bold; }
+
 .links, .links:hover, .footer-link:hover {
   text-decoration: none;
   color: #EB5754; }
@@ -6805,6 +6811,15 @@ h4 {
 
 label {
   color: #EB5754; }
+
+#reservation {
+  position: relative; }
+
+#logo-illus-reservation {
+  position: absolute;
+  bottom: 24px;
+  left: 80px;
+  height: 300px; }
 
 .tarifs-carre {
   color: white;
