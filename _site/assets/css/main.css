@@ -6721,6 +6721,16 @@ h4 {
   .wrapper-bottom h2 {
     margin-top: 8px; }
 
+.wrapper-alert {
+  background-color: #EB5754;
+  color: white;
+  padding: 10px; }
+  .wrapper-alert p {
+    margin: 0; }
+  .wrapper-alert a {
+    color: white;
+    text-decoration: underline; }
+
 #citation {
   position: relative; }
   #citation h2 {

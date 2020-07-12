@@ -19,3 +19,16 @@
     margin-top: 8px;
   }
 }
+
+.wrapper-alert {
+  background-color: $red;
+  color: white;
+  padding: 10px;
+  p {
+    margin: 0;
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
