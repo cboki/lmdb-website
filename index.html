@@ -4,7 +4,7 @@ title: 'Escape Game Bourges'
 ---
 
 <div class="wrapper-alert">
-  <p class="text-center">Retrouvez le jeu de piste de Noël en centre-ville de Bourges, <em>Le réveil d'Ursine</em>, à imprimer chez soi. <a href="assets/files/reveil-ursine.pdf">Télécharger le jeu</a></p>
+  <p class="text-center">Retrouvez le jeu de piste de Noël en centre-ville de Bourges, <em>Le réveil d'Ursine</em>, à imprimer chez soi. <a href="assets/files/reveil-ursine.pdf" id='sendDataLink'>Télécharger le jeu</a></p>
 </div>
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.15)), url('assets/images/banner-les-mysteres-de-bourges-escape-game.jpg');">
   <div class="banner-content text-center">
@@ -27,7 +27,7 @@ title: 'Escape Game Bourges'
         Inscrivez la réponse de chaque énigme dans la grille de mots-croisés et dévoilez le mot indice pour découvrir à Ursine a pu cacher sa nourriture avant l'hiver.
         </p>
         <p class="text-justify">Jeu proposé par la <a href="www.ville-bourges.fr" style="color: white;">Ville de Bourges</a>, accessible à tous (enfant à partir de 8 ans accompagné d'un adulte), du 23 au 30 décembre 2020.</p>
-        <a href="assets/files/reveil-ursine.pdf" class="btn btn-flat" style="background: rgb(20, 21, 43);">Téléchargez le jeu</a>
+        <a href="assets/files/reveil-ursine.pdf" class="btn btn-flat" style="background: rgb(20, 21, 43);" id="sendDataFormButton">Téléchargez le jeu</a>
       </div>
     </div>
   </div>
@@ -212,3 +212,21 @@ title: 'Escape Game Bourges'
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  let button = document.getElementById('sendDataFormButton');
+  button.addEventListener(
+    'click',
+    () => {
+      fbq('trackCustom', 'download', {content_name: "button-reveil-ursine"});
+    },
+    false
+  );
+  let link = document.getElementById('sendDataLink');
+  button.addEventListener(
+    'click',
+    () => {
+      fbq('trackCustom', 'download', {content_name: "link-reveil-ursine"});
+    },
+    false
+  );
+</script>
