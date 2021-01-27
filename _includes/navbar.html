@@ -2,10 +2,6 @@
   <a href="index.html"><img src="assets/images/logotype-les-mysteres-de-Bourges-escape-game-exterieur-bourges.png" alt="logo Les mystères de Bourges | Escape game extérieur à Bourges"></a>
 
   <div>
-    {% for item in site.data.navbar %}
-      <a href="{{ item.link }}">{{ item.name }}</a>
-    {% endfor %}
-
     <a href="https://www.instagram.com/lesmysteresdebourges/">
       <i class="fa fa-instagram"></i>
     </a>
@@ -13,13 +9,6 @@
     <a href="https://www.facebook.com/lesmysteresdebourges/">
         <i class="fab fa-facebook"></i>
     </a>
-  </div>
-  <div>
-      <i class="fa fa-bars"></i>
-      <ul>
-        {% for item in site.data.navbar %}
-          <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-        {% endfor %}
-      </ul>
+    <a href="reservation-escape-game-bourges.html">Réservez</a>
   </div>
 </nav>
