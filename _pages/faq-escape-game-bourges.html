@@ -4,62 +4,50 @@ title: Foire aux questions
 permalink: /:basename
 ---
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.15)), url('assets/images/faq-questions-reservation-tarif-escape-game-bourges-exterieur-jeu-piste.jpg');">
-  <div class="banner-content text-center">
+  <div class="banner-content">
     <h1>Foire aux questions</h1>
     <p>Venez trouver les réponses à vos questions.</p>
     <a href="#les-questions" class="btn btn-flat">Lire maintenant</a>
   </div>
 </div>
 
-<div class="wrapper-small">
-  <div id="les-questions" class="container">
+<div class="wrapper-small" id="les-questions">
     <!-- Menu de la FAQ -->
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <h2>Principe du jeu</h2>
-        <ul class="list-unstyled">
-          {% for item in site.data.faq.principe %}
-            <li><a href="#principe-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-sm-12 col-md-6">
-        <h2>Réservation</h2>
-        <ul class="list-unstyled">
-          {% for item in site.data.faq.reservation %}
-            <li><a href="#reservation-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
+  <h2>Principe du jeu</h2>
+  <ul>
+    {% for item in site.data.faq.principe %}
+      <li><a href="#principe-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
+    {% endfor %}
+  </ul>
+  <h2>Réservation</h2>
+  <ul>
+    {% for item in site.data.faq.reservation %}
+      <li><a href="#reservation-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="wrapper-small">
-  <div class="container">
   <!-- Contenue de la FAQ -->
-    <h2>Principe du jeu</h2>
+  <h2>Principe du jeu</h2>
 
-    {% for item in site.data.faq.principe %}
-      <div class="faq-question">
-        <h3 id="principe-<%= index %>">{{ item.question }}</h3>
-        <p>{{ item.reponse }}</p>
-      </div>
-    {% endfor %}
+  {% for item in site.data.faq.principe %}
+    <div class="faq-question">
+      <h3 id="principe-<%= index %>">{{ item.question }}</h3>
+      <p>{{ item.reponse }}</p>
+    </div>
+  {% endfor %}
 
-    <h2>Réservation</h2>
+  <h2>Réservation</h2>
 
-    {% for item in site.data.faq.reservation %}
-      <div class="faq-question">
-        <h3 id="reservation-<%= index %>">{{ item.question }}</h3>
-        <p>{{ item.reponse }}</p>
-      </div>
-    {% endfor %}
-  </div>
+  {% for item in site.data.faq.reservation %}
+    <div class="faq-question">
+      <h3 id="reservation-<%= index %>">{{ item.question }}</h3>
+      <p>{{ item.reponse }}</p>
+    </div>
+  {% endfor %}
 </div>
-<div class="wrapper-bottom text-center">
-  <div class="container">
-    <h2>Vous souhaitez réserver ou avez encore une question ?</h2>
-    <a href="reservation-escape-game-bourges.html" class="btn btn-flat">Contactez-nous</a>
-  </div>
+<div class="wrapper-bottom">
+  <h2>Vous souhaitez réserver ou avez encore une question ?</h2>
+  <a href="reservation-escape-game-bourges.html" class="btn btn-flat">Contactez-nous</a>
 </div>
