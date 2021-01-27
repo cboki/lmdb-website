@@ -1,22 +1,22 @@
-<nav class="navbar-custom">
-  <a href="index.html" class="navbar-custom-brand"><img src="assets/images/logotype-les-mysteres-de-Bourges-escape-game-exterieur-bourges.png" alt="logo Les mystères de Bourges | Escape game extérieur à Bourges"></a>
+<nav>
+  <a href="index.html"><img src="assets/images/logotype-les-mysteres-de-Bourges-escape-game-exterieur-bourges.png" alt="logo Les mystères de Bourges | Escape game extérieur à Bourges"></a>
 
-  <div class="navbar-right">
+  <div>
     {% for item in site.data.navbar %}
-      <a href="{{ item.link }}" class="navbar-item navbar-link">{{ item.name }}</a>
+      <a href="{{ item.link }}">{{ item.name }}</a>
     {% endfor %}
 
-    <a href="https://www.instagram.com/lesmysteresdebourges/" class="navbar-item navbar-link navbar-socialmedia">
+    <a href="https://www.instagram.com/lesmysteresdebourges/">
       <i class="fa fa-instagram"></i>
     </a>
 
-    <a href="https://www.facebook.com/lesmysteresdebourges/" class="navbar-item navbar-link navbar-socialmedia">
+    <a href="https://www.facebook.com/lesmysteresdebourges/">
         <i class="fab fa-facebook"></i>
     </a>
   </div>
-  <div class="navbar-item">
+  <div>
       <i class="fa fa-bars"></i>
-      <ul class="navbar-dropdown-menu">
+      <ul>
         {% for item in site.data.navbar %}
           <li><a href="{{ item.link }}">{{ item.name }}</a></li>
         {% endfor %}

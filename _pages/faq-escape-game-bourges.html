@@ -3,36 +3,36 @@ layout: default
 title: Foire aux questions
 permalink: /:basename
 ---
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.15)), url('assets/images/faq-questions-reservation-tarif-escape-game-bourges-exterieur-jeu-piste.jpg');">
-  <div class="banner-content">
+<div style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.15)), url('assets/images/faq-questions-reservation-tarif-escape-game-bourges-exterieur-jeu-piste.jpg');">
+  <div>
     <h1>Foire aux questions</h1>
     <p>Venez trouver les réponses à vos questions.</p>
-    <a href="#les-questions" class="btn btn-flat">Lire maintenant</a>
+    <a href="#les-questions">Lire maintenant</a>
   </div>
 </div>
 
-<div class="wrapper-small" id="les-questions">
+<div id="les-questions">
     <!-- Menu de la FAQ -->
   <h2>Principe du jeu</h2>
   <ul>
     {% for item in site.data.faq.principe %}
-      <li><a href="#principe-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
+      <li><a href="#principe-{{ forloop.index }}">{{ item.question }}</a></li>
     {% endfor %}
   </ul>
   <h2>Réservation</h2>
   <ul>
     {% for item in site.data.faq.reservation %}
-      <li><a href="#reservation-{{ forloop.index }}" class="navbar-wagon-link">{{ item.question }}</a></li>
+      <li><a href="#reservation-{{ forloop.index }}">{{ item.question }}</a></li>
     {% endfor %}
   </ul>
 </div>
 
-<div class="wrapper-small">
+<div>
   <!-- Contenue de la FAQ -->
   <h2>Principe du jeu</h2>
 
   {% for item in site.data.faq.principe %}
-    <div class="faq-question">
+    <div>
       <h3 id="principe-<%= index %>">{{ item.question }}</h3>
       <p>{{ item.reponse }}</p>
     </div>
@@ -41,13 +41,13 @@ permalink: /:basename
   <h2>Réservation</h2>
 
   {% for item in site.data.faq.reservation %}
-    <div class="faq-question">
+    <div>
       <h3 id="reservation-<%= index %>">{{ item.question }}</h3>
       <p>{{ item.reponse }}</p>
     </div>
   {% endfor %}
 </div>
-<div class="wrapper-bottom">
+<div>
   <h2>Vous souhaitez réserver ou avez encore une question ?</h2>
-  <a href="reservation-escape-game-bourges.html" class="btn btn-flat">Contactez-nous</a>
+  <a href="reservation-escape-game-bourges.html">Contactez-nous</a>
 </div>
