@@ -5,44 +5,45 @@
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  nav img {
-    height: 5em; }
-
-#navbar-btn {
-  background-color: #EB5754;
-  color: white;
-  font-weight: bold;
-  padding: 0.8em 1.6em;
-  margin-right: 1em; }
-
 /* -------------------------------------
  * Utilities classes
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
-.img-wrapper {
-  width: 100vw;
-  margin: 0 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0; }
+
+ul,
+ol {
+  list-style: none; }
+
+html:focus-within {
+  scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
 
 a {
-  font-family: "Open Sans", "Helvetica", "sans-serif";
-  text-decoration: none;
-  color: #EB5754; }
+  text-decoration: auto; }
 
-p {
-  font-family: "Open Sans", "Helvetica", "sans-serif"; }
+img {
+  max-width: 100%;
+  display: block; }
 
-h1 {
-  font-size: 4em; }
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+input,
+button,
+textarea,
+select {
+  font: inherit; }
