@@ -9,12 +9,40 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  nav img {
+    height: 5em; }
+
+#navbar-btn {
+  background-color: #EB5754;
+  color: white;
+  font-weight: bold;
+  padding: 0.8em 1.6em;
+  margin-right: 1em; }
 
 /* -------------------------------------
  * Utilities classes
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+.img-wrapper {
+  width: 100vw;
+  margin: 0 0; }
+
 a {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
   text-decoration: none;
   color: #EB5754; }
+
+p {
+  font-family: "Open Sans", "Helvetica", "sans-serif"; }
+
+h1 {
+  font-size: 4em; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
