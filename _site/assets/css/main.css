@@ -6730,6 +6730,8 @@ h4 {
   .wrapper-alert a {
     color: white;
     text-decoration: underline; }
+    .wrapper-alert a:hover {
+      color: white; }
 
 #citation {
   position: relative; }
