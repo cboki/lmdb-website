@@ -22,3 +22,9 @@
 #avis-4 {
   background-color: $gray-lmdb;
 }
+
+#google-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
