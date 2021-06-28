@@ -5,3 +5,22 @@
 #text-answer-form {
   font-weight: bold;
 }
+
+label {
+  color: $red;
+}
+
+#form-select {
+  display: flex;
+  align-items: baseline;
+
+  select {
+    flex : auto;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #6c757d;
+  }
+}
