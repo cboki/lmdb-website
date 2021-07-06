@@ -6727,6 +6727,12 @@ h3 {
 h4 {
   font-size: 24px; }
 
+.big-text {
+  font-size: 54px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px; }
+
 .wrapper {
   padding: 24vh 0px 16vh 0px; }
 
@@ -6747,13 +6753,13 @@ h4 {
     margin-top: 8px; }
 
 .wrapper-alert {
-  background-color: #EB5754;
-  color: white;
+  background-color: #FDB631;
+  color: black;
   padding: 10px; }
   .wrapper-alert p {
     margin: 0; }
   .wrapper-alert a {
-    color: white;
+    color: black;
     text-decoration: underline; }
     .wrapper-alert a:hover {
       color: white; }

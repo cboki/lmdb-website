@@ -25,14 +25,14 @@
 }
 
 .wrapper-alert {
-  background-color: $red;
-  color: white;
+  background-color: $yellow;
+  color: black;
   padding: 10px;
   p {
     margin: 0;
   }
   a {
-    color: white;
+    color: black;
     text-decoration: underline;
 
     &:hover {
