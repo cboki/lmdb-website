@@ -6657,7 +6657,8 @@ a.text-dark:hover, a.text-dark:focus {
   height: 50vh;
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  margin: 20px auto; }
   .card-parcours span {
     position: absolute;
     left: 1rem;
