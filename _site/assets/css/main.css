@@ -6768,13 +6768,13 @@ h4 {
     margin-top: 8px; }
 
 .wrapper-alert {
-  background-color: #FDB631;
-  color: black;
+  background-color: #EB5754;
+  color: white;
   padding: 10px; }
   .wrapper-alert p {
     margin: 0; }
   .wrapper-alert a {
-    color: black;
+    color: white;
     text-decoration: underline; }
     .wrapper-alert a:hover {
       color: white; }
