@@ -6652,6 +6652,9 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: white;
   color: #EB5754; }
 
+#btn-mlv {
+  background: #FF7657; }
+
 .card-parcours {
   height: 50vh;
   background-size: cover;
@@ -6778,6 +6781,9 @@ h4 {
     text-decoration: underline; }
     .wrapper-alert a:hover {
       color: white; }
+
+#my-loire-valley {
+  background-color: #eeeeee; }
 
 #citation {
   position: relative; }
